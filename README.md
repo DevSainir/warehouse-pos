@@ -17,20 +17,29 @@
 ## Быстрый старт (Запуск через Docker)
 
 1. Клонируйте репозиторий:
-```bash
-git clone git@github.com:DevSainir/warehouse-pos.git
-cd warehouse-pos
-```
+    ```bash
+    git clone git@github.com:DevSainir/warehouse-pos.git
+    cd warehouse-pos
+    ```
 
 2. Создайте файл переменных окружения на основе примера:
-```bash
-cp .env.example .env
-```
+* **Linux/macOS:**
+     ```bash
+     cp .env.example .env
+     ```
+* **Windows (PowerShell):**
+  ```powershell
+  Copy-Item .env.example -Destination .env
+  ```
+* **Windows (CMD):**
+  ```cmd
+  copy .env.example .env
+  ```
 
 3. Запустите контейнеры:
-```bash
-docker-compose up --build
-```
+    ```bash
+    docker-compose up --build
+    ```
 
 Сервис будет доступен по адресу: `http://localhost:8000`
 Интерактивная документация API (Swagger): `http://localhost:8000/docs`

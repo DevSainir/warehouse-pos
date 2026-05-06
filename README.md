@@ -18,8 +18,8 @@
 
 1. Клонируйте репозиторий:
 ```bash
-git clone <ссылка_на_твой_будущий_репозиторий>
-cd <название_папки>
+git clone git@github.com:DevSainir/warehouse-pos.git
+cd warehouse-pos
 ```
 
 2. Создайте файл переменных окружения на основе примера:

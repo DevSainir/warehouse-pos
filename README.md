@@ -40,6 +40,12 @@
     ```bash
     docker-compose up --build
     ```
+4. Создайте тестового администратора (для доступа к защищенным эндпоинтам):
+    ```bash
+    docker-compose exec api python -m app.cli.create_admin
+    ```
+* **Логин:** `admin`
+* **Пароль:** `12341234`
 
 Сервис будет доступен по адресу: `http://localhost:8000`
 Интерактивная документация API (Swagger): `http://localhost:8000/docs`
